@@ -8,19 +8,24 @@
 </head>
 
 <body>
+
     <form action="">
         <fieldset>
             <legend>Personal Details</legend>
 
+            <!-- Firstname input -->
             <label for="firstName">Firstname</label>
             <input type="text" name="fName" id="firstName"><br><br>
 
+            <!-- Middlename input -->
             <label for="middleName">Middlename:</label>
             <input type="text" name="mName" id="middleName"><br><br>
 
+            <!-- Lastname input -->
             <label for="lastName">Lastname:</label>
             <input type="text" name="lName" id="lastName"><br><br>
 
+            <!-- Course selection -->
             <label for="course">Course :</label>
             <select name="courseDetail" id="course">
                 <option value="none">Course</option>
@@ -32,6 +37,7 @@
                 <option value="mtech">M.Tech</option>
             </select><br><br>
 
+            <!-- Gender selection -->
             <label for="gender">Gender</label><br>
             <input type="radio" id="male" value="M" name="gender">
             <label for="male">Male</label><br>
@@ -40,9 +46,46 @@
             <input type="radio" id="other" value="O" name="gender">
             <label for="other">Other</label><br><br>
 
-
+            <!-- Date of Birth input -->
             <label for="dob">DOB</label>
             <input type="datetime-local" id="dob" name="date-time"><br><br>
+
+            <!-- Phone number input -->
+            <label for="phone">Phone</label>
+            <input type="tel" value="+91" disabled style="width: 25px;">
+            <input type="tel" id="phone" name="phoneNo"><br><br>
+
+            <!-- Address input -->
+            <label for="address">Address</label><br>
+            <textarea name="Address" id="address" cols="100" rows="5"></textarea><br><br>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="gmail"><br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <!-- Re-type password input -->
+            <label for="rpassword">Re-type password:</label>
+            <input type="password" id="rpassword" name="re-password"><br><br>
+
+            <!-- Terms and conditions checkbox -->
+            <input type="checkbox" id="tAndC" value="checked">
+            <label for="tAndC">Agree to terms and conditions</label><br><br>
+
+            <!-- File selection input -->
+            <label for="data">Choose File</label>
+            <input type="file" id="data"><br><br>
+
+            <!-- Color selection input -->
+            <label for="color">Choose Colour</label>
+            <input type="color" id="color"><br><br>
+
+            <!-- Form buttons -->
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
         </fieldset>
     </form>
 </body>
